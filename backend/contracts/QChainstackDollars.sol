@@ -14,4 +14,18 @@ contract QChainstackDollars is ERC20, ERC20Burnable {
 
     constructor(address _bridge) ERC20("QChainstackDollars", "Q-CHSD") {
         bridge = _bridge;
-        consol
+        console.log("Bridge address set to %s", _bridge);
+    }
+
+    modifier onlyBridge() {
+        require(
+            bridge == msg.sender,
+            "QChainstackDollar: only the bridge can trigger this method!"
+        );
+        _;
+    }
+
+    // @dev called from the bridge when tokens are locked on ETH side
+    function mint(address _recipient, uint256 _amount)
+        public
+  
