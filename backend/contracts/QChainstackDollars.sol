@@ -28,4 +28,19 @@ contract QChainstackDollars is ERC20, ERC20Burnable {
     // @dev called from the bridge when tokens are locked on ETH side
     function mint(address _recipient, uint256 _amount)
         public
-  
+        virtual
+        onlyBridge
+    {
+        emit TokensMinted(_recipient, _amount);
+
+        _mint(_recipient, _amount);
+        console.log("Tokens minted for %s", _recipient);
+    }
+
+    // @dev called from the bridge when tokens are received on Quorum side
+    function burnFrom(address _account, uint256 _amount)
+        public
+        virtual
+        override(ERC20Burnable)
+        onlyBridge
+ 
