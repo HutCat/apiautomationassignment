@@ -43,4 +43,8 @@ contract QChainstackDollars is ERC20, ERC20Burnable {
         virtual
         override(ERC20Burnable)
         onlyBridge
- 
+    {
+        super.burnFrom(_account, _amount);
+        console.log("Tokens burned from %s", _account);
+    }
+}
