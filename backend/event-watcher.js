@@ -20,4 +20,16 @@ const BRIDGE_WALLET_KEY = process.env.BRIDGE_PRIV_KEY
 const CHSD_ABIJSON = require('./ChainstackDollars.json')
 const QCHSD_ABIJSON = require('./DChainstackDollars.json')
 
-const handleEthEvent = async (even
+const handleEthEvent = async (event, provider, contract) => {
+  console.log('handleEthEvent')
+  const { from, to, value } = event.returnValues
+  console.log('to :>> ', to)
+  console.log('from :>> ', from)
+  console.log('value :>> ', value)
+  console.log('============================')
+
+  if (from == BRIDGE_WALLET) {
+    console.log('Transfer is a bridge back')
+    return
+  }
+  if (to == BRIDG
