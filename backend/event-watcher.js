@@ -41,4 +41,22 @@ const handleEthEvent = async (event, provider, contract) => {
       console.log('🌈🌈🌈🌈🌈 Bridge to destination completed')
     } catch (err) {
       console.error('Error processing transaction', err)
-      // TODO: retu
+      // TODO: return funds
+    }
+  } else {
+    console.log('Another transfer')
+  }
+}
+
+const handleDestinationEvent = async (
+  event,
+  provider,
+  contract,
+  providerDest,
+  contractDest
+) => {
+  const { from, to, value } = event.returnValues
+  console.log('handleDestinationEvent')
+  console.log('to :>> ', to)
+  console.log('from :>> ', from)
+  console.log('value :>> ', va
