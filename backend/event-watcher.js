@@ -32,4 +32,13 @@ const handleEthEvent = async (event, provider, contract) => {
     console.log('Transfer is a bridge back')
     return
   }
-  if (to == BRIDG
+  if (to == BRIDGE_WALLET && to != from) {
+    console.log('Tokens received on bridge from ETH chain! Time to bridge!')
+
+    try {
+      const tokensMinted = await mintTokens(provider, contract, value, from)
+      if (!tokensMinted) return
+      console.log('🌈🌈🌈🌈🌈 Bridge to destination completed')
+    } catch (err) {
+      console.error('Error processing transaction', err)
+      // TODO: retu
