@@ -59,4 +59,20 @@ const handleDestinationEvent = async (
   console.log('handleDestinationEvent')
   console.log('to :>> ', to)
   console.log('from :>> ', from)
-  console.log('value :>> ', va
+  console.log('value :>> ', value)
+  console.log('============================')
+
+  if (from == process.env.WALLET_ZERO) {
+    console.log('Tokens minted')
+    return
+  }
+
+  if (to == BRIDGE_WALLET && to != from) {
+    console.log(
+      'Tokens received on bridge from destination chain! Time to bridge back!'
+    )
+
+    try {
+      // we need to approve burn, then burn
+      const tokenBurnApproved = await approveForBurn(
+        provi
