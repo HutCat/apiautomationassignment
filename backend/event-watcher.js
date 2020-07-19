@@ -75,4 +75,15 @@ const handleDestinationEvent = async (
     try {
       // we need to approve burn, then burn
       const tokenBurnApproved = await approveForBurn(
-        provi
+        providerDest,
+        contractDest,
+        value
+      )
+      if (!tokenBurnApproved) return
+      console.log('Tokens approved to be burnt')
+      const tokensBurnt = await burnTokens(providerDest, contractDest, value)
+
+      if (!tokensBurnt) return
+      console.log(
+        'Tokens burnt on destination, time to transfer tokens in ETH side'
+      
