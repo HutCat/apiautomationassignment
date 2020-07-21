@@ -86,4 +86,18 @@ const handleDestinationEvent = async (
       if (!tokensBurnt) return
       console.log(
         'Tokens burnt on destination, time to transfer tokens in ETH side'
-      
+      )
+      const transferBack = await transferToEthWallet(
+        provider,
+        contract,
+        value,
+        from
+      )
+      if (!transferBack) return
+
+      console.log('Tokens transfered to ETH wallet')
+      console.log('🌈🌈🌈🌈🌈 Bridge back operation completed')
+    } catch (err) {
+      console.error('Error processing transaction', err)
+      // TODO: return funds
+   
