@@ -100,4 +100,16 @@ const handleDestinationEvent = async (
     } catch (err) {
       console.error('Error processing transaction', err)
       // TODO: return funds
-   
+    }
+  } else {
+    console.log('Something else triggered Transfer event')
+  }
+}
+
+const main = async () => {
+  const originWebSockerProvider = new Web3(process.env.ORIGIN_WSS_ENDPOINT)
+  const destinationWebSockerProvider = new Web3(
+    process.env.DESTINATION_WSS_ENDPOINT
+  )
+  // adds account to sign transactions
+  originWebSockerProvider.eth
