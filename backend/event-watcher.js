@@ -112,4 +112,13 @@ const main = async () => {
     process.env.DESTINATION_WSS_ENDPOINT
   )
   // adds account to sign transactions
-  originWebSockerProvider.eth
+  originWebSockerProvider.eth.accounts.wallet.add(BRIDGE_WALLET_KEY)
+  destinationWebSockerProvider.eth.accounts.wallet.add(BRIDGE_WALLET_KEY)
+
+  const oriNetworkId = await originWebSockerProvider.eth.net.getId()
+  const destNetworkId = await destinationWebSockerProvider.eth.net.getId()
+
+  console.log('oriNetworkId :>> ', oriNetworkId)
+  console.log('destNetworkId :>> ', destNetworkId)
+
+  const originTokenCont
