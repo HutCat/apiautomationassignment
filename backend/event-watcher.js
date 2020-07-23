@@ -121,4 +121,17 @@ const main = async () => {
   console.log('oriNetworkId :>> ', oriNetworkId)
   console.log('destNetworkId :>> ', destNetworkId)
 
-  const originTokenCont
+  const originTokenContract = new originWebSockerProvider.eth.Contract(
+    CHSD_ABIJSON.abi,
+    ORIGIN_TOKEN_CONTRACT_ADDRESS
+  )
+
+  const destinationTokenContract =
+    new destinationWebSockerProvider.eth.Contract(
+      QCHSD_ABIJSON.abi,
+      DESTINATION_TOKEN_CONTRACT_ADDRESS
+    )
+
+  let options = {
+    // filter: {
+    //   value: ['1000', '1337'], //Only get events where transfer va
