@@ -134,4 +134,20 @@ const main = async () => {
 
   let options = {
     // filter: {
-    //   value: ['1000', '1337'], //Only get events where transfer va
+    //   value: ['1000', '1337'], //Only get events where transfer value was 1000 or 1337
+    // },
+    // fromBlock: 0, //Number || "earliest" || "pending" || "latest"
+    // toBlock: 'latest',
+  }
+
+  originTokenContract.events
+    .Transfer(options)
+    .on('data', async (event) => {
+      await handleEthEvent(
+        event,
+        destinationWebSockerProvider,
+        destinationTokenContract
+      )
+    })
+    .on('error', (err) => {
+      conso
