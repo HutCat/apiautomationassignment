@@ -161,4 +161,17 @@ const main = async () => {
         event,
         originWebSockerProvider,
         originTokenContract,
-        destinationWebSoc
+        destinationWebSockerProvider,
+        destinationTokenContract
+      )
+    })
+    .on('error', (err) => {
+      console.error('Error: ', err)
+    })
+
+  console.log(
+    `Waiting for Transfer events on ${DESTINATION_TOKEN_CONTRACT_ADDRESS}`
+  )
+}
+
+main()
