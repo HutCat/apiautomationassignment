@@ -150,4 +150,15 @@ const main = async () => {
       )
     })
     .on('error', (err) => {
-      conso
+      console.error('Error: ', err)
+    })
+  console.log(`Waiting for Transfer events on ${ORIGIN_TOKEN_CONTRACT_ADDRESS}`)
+
+  destinationTokenContract.events
+    .Transfer(options)
+    .on('data', async (event) => {
+      await handleDestinationEvent(
+        event,
+        originWebSockerProvider,
+        originTokenContract,
+        destinationWebSoc
