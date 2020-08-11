@@ -38,4 +38,13 @@ module.exports = {
       url: process.env.DEPLOY_ENDPOINT_ORIGIN,
       accounts: [process.env.DEPLOY_ACC_KEY],
     },
-    d
+    destination: {
+      url: process.env.DEPLOY_ENDPOINT_DESTINATION,
+      accounts: [process.env.DEPLOY_ACC_KEY],
+    },
+    // rinkeby: {
+    //   url: process.env.DEPLOY_KEY_RINKEBY,
+    //   accounts: [process.env.DEPLOY_ACC_RINKEBY],
+    // },
+  },
+}
