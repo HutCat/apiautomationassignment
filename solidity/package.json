@@ -16,4 +16,8 @@
   "scripts": {
     "deploy": "npx hardhat run ./scripts/deploy.js --network localhost",
     "deploy:ori": "npx hardhat run ./scripts/deployOrigin.js --network origin",
-    "deploy:dest": "npx hardhat run ./scripts/deployDestination.js --network 
+    "deploy:dest": "npx hardhat run ./scripts/deployDestination.js --network destination",
+    "test": "npx hardhat test",
+    "dev": "cd web && npm run dev"
+  }
+}
