@@ -21,4 +21,16 @@ describe('DChainstackDollars contract', function () {
     tokenFactory = await ethers.getContractFactory('DChainstackDollars')
     ;[owner, bridge, user2, user3] = await ethers.getSigners()
     // deploy contract with bridge address
-    qchain
+    qchainstackDollarsContract = await tokenFactory.deploy(bridge.address)
+    await qchainstackDollarsContract.deployed()
+  })
+
+  it('has a name', async function () {
+    expect(await qchainstackDollarsContract.name()).to.be.equal(NAME)
+  })
+
+  it('has a symbol', async function () {
+    expect(await qchainstackDollarsContract.symbol()).to.be.equal(SYMBOL)
+  })
+
+  // it(
