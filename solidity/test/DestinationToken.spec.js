@@ -33,4 +33,22 @@ describe('DChainstackDollars contract', function () {
     expect(await qchainstackDollarsContract.symbol()).to.be.equal(SYMBOL)
   })
 
-  // it(
+  // it('Stores bridge address on deploy', async function () {
+  //   expect(await qchainstackDollarsContract.bridge()).to.be.equal(
+  //     bridge.address
+  //   )
+  // })
+
+  it('Prevents mint method to be called', async function () {
+    await expect(
+      qchainstackDollarsContract.connect(user2).mint(user2.address, 1000)
+    ).to.be.revertedWith(
+      'DChainstackDollars: only the bridge can trigger this method!'
+    )
+  })
+
+  it('Prevents burnFrom method to be called', async function () {
+    await expect(
+      qchainstackDollarsContract.connect(user2).burnFrom(user2.address, 1000)
+    ).to.be.revertedWith(
+      'DChainstackDollars: only the bridge can trigger t
