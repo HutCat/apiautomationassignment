@@ -51,4 +51,15 @@ describe('DChainstackDollars contract', function () {
     await expect(
       qchainstackDollarsContract.connect(user2).burnFrom(user2.address, 1000)
     ).to.be.revertedWith(
-      'DChainstackDollars: only the bridge can trigger t
+      'DChainstackDollars: only the bridge can trigger this method!'
+    )
+  })
+
+  it('Allows bridge to mint tokens for users', async function () {
+    await qchainstackDollarsContract.connect(bridge).mint(user2.address, 100000)
+    expect(
+      await qchainstackDollarsContract.connect(user2).balanceOf(user2.address)
+    ).to.be.equal(100000)
+  })
+
+  it('Prevents bridge from burning not-allowed tokens', async functio
