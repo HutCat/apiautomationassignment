@@ -72,4 +72,12 @@ describe('DChainstackDollars contract', function () {
     await qchainstackDollarsContract.connect(bridge).mint(user3.address, 10)
 
     // allows bridge to burn
-  
+    await qchainstackDollarsContract.connect(user3).approve(bridge.address, 5)
+
+    await qchainstackDollarsContract.connect(bridge).burnFrom(user3.address, 5)
+
+    expect(
+      await qchainstackDollarsContract.connect(bridge).balanceOf(user3.address)
+    ).to.be.equal(5)
+  })
+})
