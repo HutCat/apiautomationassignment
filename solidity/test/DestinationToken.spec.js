@@ -62,4 +62,14 @@ describe('DChainstackDollars contract', function () {
     ).to.be.equal(100000)
   })
 
-  it('Prevents bridge from burning not-allowed tokens', async functio
+  it('Prevents bridge from burning not-allowed tokens', async function () {
+    await expect(
+      qchainstackDollarsContract.connect(bridge).burnFrom(user2.address, 4)
+    ).to.be.revertedWith('ERC20: insufficient allowance')
+  })
+
+  it('Allows bridge to burn allowed tokens from users address', async function () {
+    await qchainstackDollarsContract.connect(bridge).mint(user3.address, 10)
+
+    // allows bridge to burn
+  
