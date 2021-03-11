@@ -8046,3 +8046,333 @@
                                         "nodeType": "YulIdentifier",
                                         "src": "12221:6:7"
                                       },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "12229:1:7",
+                                        "type": "",
+                                        "value": "0"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "add",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "12217:3:7"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "12217:14:7"
+                                  },
+                                  {
+                                    "kind": "string",
+                                    "nodeType": "YulLiteral",
+                                    "src": "12233:34:7",
+                                    "type": "",
+                                    "value": "ERC20: transfer amount exceeds b"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "12210:6:7"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "12210:58:7"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "12210:58:7"
+                            },
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "arguments": [
+                                      {
+                                        "name": "memPtr",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "12289:6:7"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "12297:2:7",
+                                        "type": "",
+                                        "value": "32"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "add",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "12285:3:7"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "12285:15:7"
+                                  },
+                                  {
+                                    "kind": "string",
+                                    "nodeType": "YulLiteral",
+                                    "src": "12302:8:7",
+                                    "type": "",
+                                    "value": "alance"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "12278:6:7"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "12278:33:7"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "12278:33:7"
+                            }
+                          ]
+                        },
+                        "name": "store_literal_in_memory_4107e8a8b9e94bf8ff83080ddec1c0bffe897ebc2241b89d44f66b3d274088b6",
+                        "nodeType": "YulFunctionDefinition",
+                        "parameters": [
+                          {
+                            "name": "memPtr",
+                            "nodeType": "YulTypedName",
+                            "src": "12191:6:7",
+                            "type": ""
+                          }
+                        ],
+                        "src": "12093:225:7"
+                      },
+                      {
+                        "body": {
+                          "nodeType": "YulBlock",
+                          "src": "12430:118:7",
+                          "statements": [
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "arguments": [
+                                      {
+                                        "name": "memPtr",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "12452:6:7"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "12460:1:7",
+                                        "type": "",
+                                        "value": "0"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "add",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "12448:3:7"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "12448:14:7"
+                                  },
+                                  {
+                                    "kind": "string",
+                                    "nodeType": "YulLiteral",
+                                    "src": "12464:34:7",
+                                    "type": "",
+                                    "value": "ERC20: transfer from the zero ad"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "12441:6:7"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "12441:58:7"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "12441:58:7"
+                            },
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "arguments": [
+                                      {
+                                        "name": "memPtr",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "12520:6:7"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "12528:2:7",
+                                        "type": "",
+                                        "value": "32"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "add",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "12516:3:7"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "12516:15:7"
+                                  },
+                                  {
+                                    "kind": "string",
+                                    "nodeType": "YulLiteral",
+                                    "src": "12533:7:7",
+                                    "type": "",
+                                    "value": "dress"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "12509:6:7"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "12509:32:7"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "12509:32:7"
+                            }
+                          ]
+                        },
+                        "name": "store_literal_in_memory_baecc556b46f4ed0f2b4cb599d60785ac8563dd2dc0a5bf12edea1c39e5e1fea",
+                        "nodeType": "YulFunctionDefinition",
+                        "parameters": [
+                          {
+                            "name": "memPtr",
+                            "nodeType": "YulTypedName",
+                            "src": "12422:6:7",
+                            "type": ""
+                          }
+                        ],
+                        "src": "12324:224:7"
+                      },
+                      {
+                        "body": {
+                          "nodeType": "YulBlock",
+                          "src": "12660:117:7",
+                          "statements": [
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "arguments": [
+                                      {
+                                        "name": "memPtr",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "12682:6:7"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "12690:1:7",
+                                        "type": "",
+                                        "value": "0"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "add",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "12678:3:7"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "12678:14:7"
+                                  },
+                                  {
+                                    "kind": "string",
+                                    "nodeType": "YulLiteral",
+                                    "src": "12694:34:7",
+                                    "type": "",
+                                    "value": "ERC20: approve from the zero add"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "12671:6:7"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "12671:58:7"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "12671:58:7"
+                            },
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "arguments": [
+                                      {
+                                        "name": "memPtr",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "12750:6:7"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
+                                        "src": "12758:2:7",
+                                        "type": "",
+                                        "value": "32"
+                                      }
+                                    ],
+                                    "functionName": {
+                                      "name": "add",
+                                      "nodeType": "YulIdentifier",
+                                      "src": "12746:3:7"
+                                    },
+                                    "nodeType": "YulFunctionCall",
+                                    "src": "12746:15:7"
+                                  },
+                                  {
+                                    "kind": "string",
+                                    "nodeType": "YulLiteral",
+                                    "src": "12763:6:7",
+                                    "type": "",
+                                    "value": "ress"
+                                  }
+                                ],
+                                "functionName": {
+                                  "name": "mstore",
+                                  "nodeType": "YulIdentifier",
+                                  "src": "12739:6:7"
+                                },
+                                "nodeType": "YulFunctionCall",
+                                "src": "12739:31:7"
+                              },
+                              "nodeType": "YulExpressionStatement",
+                              "src": "12739:31:7"
+                            }
+                          ]
+                        },
+                        "name": "store_literal_in_memory_c953f4879035ed60e766b34720f656aab5c697b141d924c283124ecedb91c208",
+                        "nodeType": "YulFunctionDefinition",
+                        "parameters": [
+                          {
+                            "name": "memPtr",
+                            "nodeType": "YulTypedName",
+                            "src": "12652:6:7",
+                            "type": ""
+                          }
+                        ],
+                        "src": "12554:223:7"
+                      },
+                      {
+                        "body": {
+                          "nodeType": "YulBlock",
+                          "src": "12889:118:7",
+                          "statements": [
+                            {
+                              "expression": {
+                                "arguments": [
+                                  {
+                                    "arguments": [
+                                      {
+                                        "name": "memPtr",
+                                        "nodeType": "YulIdentifier",
+                                        "src": "12911:6:7"
+                                      },
+                                      {
+                                        "kind": "number",
+                                        "nodeType": "YulLiteral",
