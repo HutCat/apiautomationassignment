@@ -30274,3 +30274,333 @@
                       },
                       {
                         "expression": {
+                          "arguments": [
+                            {
+                              "hexValue": "546f6b656e73206d696e74656420666f72202573",
+                              "id": 830,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "1033:22:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_d694eb7cbf5182b87bfeab1899a5f757437e0d41f7c06822c50ddd872a7140ae",
+                                "typeString": "literal_string \"Tokens minted for %s\""
+                              },
+                              "value": "Tokens minted for %s"
+                            },
+                            {
+                              "id": 831,
+                              "name": "_recipient",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 810,
+                              "src": "1057:10:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_d694eb7cbf5182b87bfeab1899a5f757437e0d41f7c06822c50ddd872a7140ae",
+                                "typeString": "literal_string \"Tokens minted for %s\""
+                              },
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "expression": {
+                              "id": 827,
+                              "name": "console",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 8926,
+                              "src": "1021:7:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_console_$8926_$",
+                                "typeString": "type(library console)"
+                              }
+                            },
+                            "id": 829,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "log",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 1621,
+                            "src": "1021:11:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_address_$returns$__$",
+                              "typeString": "function (string memory,address) view"
+                            }
+                          },
+                          "id": 832,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1021:47:5",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 833,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1021:47:5"
+                      }
+                    ]
+                  },
+                  "functionSelector": "40c10f19",
+                  "id": 835,
+                  "implemented": true,
+                  "kind": "function",
+                  "modifiers": [
+                    {
+                      "id": 815,
+                      "kind": "modifierInvocation",
+                      "modifierName": {
+                        "id": 814,
+                        "name": "onlyBridge",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 808,
+                        "src": "911:10:5"
+                      },
+                      "nodeType": "ModifierInvocation",
+                      "src": "911:10:5"
+                    }
+                  ],
+                  "name": "mint",
+                  "nameLocation": "830:4:5",
+                  "nodeType": "FunctionDefinition",
+                  "parameters": {
+                    "id": 813,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 810,
+                        "mutability": "mutable",
+                        "name": "_recipient",
+                        "nameLocation": "843:10:5",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 835,
+                        "src": "835:18:5",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "typeName": {
+                          "id": 809,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "835:7:5",
+                          "stateMutability": "nonpayable",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "visibility": "internal"
+                      },
+                      {
+                        "constant": false,
+                        "id": 812,
+                        "mutability": "mutable",
+                        "name": "_amount",
+                        "nameLocation": "863:7:5",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 835,
+                        "src": "855:15:5",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 811,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "855:7:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "834:37:5"
+                  },
+                  "returnParameters": {
+                    "id": 816,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "926:0:5"
+                  },
+                  "scope": 862,
+                  "src": "821:254:5",
+                  "stateMutability": "nonpayable",
+                  "virtual": true,
+                  "visibility": "public"
+                },
+                {
+                  "baseFunctions": [
+                    708
+                  ],
+                  "body": {
+                    "id": 860,
+                    "nodeType": "Block",
+                    "src": "1295:106:5",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "id": 849,
+                              "name": "_account",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 837,
+                              "src": "1320:8:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            },
+                            {
+                              "id": 850,
+                              "name": "_amount",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 839,
+                              "src": "1330:7:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              },
+                              {
+                                "typeIdentifier": "t_uint256",
+                                "typeString": "uint256"
+                              }
+                            ],
+                            "expression": {
+                              "id": 846,
+                              "name": "super",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": -25,
+                              "src": "1305:5:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_super$_DChainstackDollars_$862_$",
+                                "typeString": "type(contract super DChainstackDollars)"
+                              }
+                            },
+                            "id": 848,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "burnFrom",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 708,
+                            "src": "1305:14:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_nonpayable$_t_address_$_t_uint256_$returns$__$",
+                              "typeString": "function (address,uint256)"
+                            }
+                          },
+                          "id": 851,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "1305:33:5",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 852,
+                        "nodeType": "ExpressionStatement",
+                        "src": "1305:33:5"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "hexValue": "546f6b656e73206275726e65642066726f6d202573",
+                              "id": 856,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "1360:23:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_ce081aa3ea12b4452c5388e7b6a4778fc92d0c707b90a2fa22dec46cf9b9dc83",
+                                "typeString": "literal_string \"Tokens burned from %s\""
+                              },
+                              "value": "Tokens burned from %s"
+                            },
+                            {
+                              "id": 857,
+                              "name": "_account",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 837,
+                              "src": "1385:8:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_ce081aa3ea12b4452c5388e7b6a4778fc92d0c707b90a2fa22dec46cf9b9dc83",
+                                "typeString": "literal_string \"Tokens burned from %s\""
+                              },
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "expression": {
+                              "id": 853,
+                              "name": "console",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 8926,
+                              "src": "1348:7:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_console_$8926_$",
+                                "typeString": "type(library console)"
