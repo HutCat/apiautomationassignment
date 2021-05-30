@@ -29592,3 +29592,344 @@
                     "typeDescriptions": {}
                   },
                   "nameLocation": "-1:-1:-1"
+                }
+              ],
+              "unitAlias": ""
+            },
+            {
+              "abstract": false,
+              "baseContracts": [
+                {
+                  "baseName": {
+                    "id": 764,
+                    "name": "ERC20",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 587,
+                    "src": "301:5:5"
+                  },
+                  "id": 765,
+                  "nodeType": "InheritanceSpecifier",
+                  "src": "301:5:5"
+                },
+                {
+                  "baseName": {
+                    "id": 766,
+                    "name": "ERC20Burnable",
+                    "nodeType": "IdentifierPath",
+                    "referencedDeclaration": 709,
+                    "src": "308:13:5"
+                  },
+                  "id": 767,
+                  "nodeType": "InheritanceSpecifier",
+                  "src": "308:13:5"
+                }
+              ],
+              "contractDependencies": [],
+              "contractKind": "contract",
+              "fullyImplemented": true,
+              "id": 862,
+              "linearizedBaseContracts": [
+                862,
+                709,
+                587,
+                734,
+                665,
+                756
+              ],
+              "name": "DChainstackDollars",
+              "nameLocation": "279:18:5",
+              "nodeType": "ContractDefinition",
+              "nodes": [
+                {
+                  "constant": false,
+                  "id": 769,
+                  "mutability": "mutable",
+                  "name": "bridge",
+                  "nameLocation": "336:6:5",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 862,
+                  "src": "328:14:5",
+                  "stateVariable": true,
+                  "storageLocation": "default",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_address",
+                    "typeString": "address"
+                  },
+                  "typeName": {
+                    "id": 768,
+                    "name": "address",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "328:7:5",
+                    "stateMutability": "nonpayable",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_address",
+                      "typeString": "address"
+                    }
+                  },
+                  "visibility": "internal"
+                },
+                {
+                  "anonymous": false,
+                  "id": 775,
+                  "name": "TokensMinted",
+                  "nameLocation": "355:12:5",
+                  "nodeType": "EventDefinition",
+                  "parameters": {
+                    "id": 774,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 771,
+                        "indexed": false,
+                        "mutability": "mutable",
+                        "name": "from",
+                        "nameLocation": "376:4:5",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 775,
+                        "src": "368:12:5",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_address",
+                          "typeString": "address"
+                        },
+                        "typeName": {
+                          "id": 770,
+                          "name": "address",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "368:7:5",
+                          "stateMutability": "nonpayable",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "visibility": "internal"
+                      },
+                      {
+                        "constant": false,
+                        "id": 773,
+                        "indexed": false,
+                        "mutability": "mutable",
+                        "name": "amount",
+                        "nameLocation": "390:6:5",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 775,
+                        "src": "382:14:5",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_uint256",
+                          "typeString": "uint256"
+                        },
+                        "typeName": {
+                          "id": 772,
+                          "name": "uint256",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "382:7:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_uint256",
+                            "typeString": "uint256"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "367:30:5"
+                  },
+                  "src": "349:49:5"
+                },
+                {
+                  "body": {
+                    "id": 795,
+                    "nodeType": "Block",
+                    "src": "471:91:5",
+                    "statements": [
+                      {
+                        "expression": {
+                          "id": 786,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "leftHandSide": {
+                            "id": 784,
+                            "name": "bridge",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 769,
+                            "src": "481:6:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "nodeType": "Assignment",
+                          "operator": "=",
+                          "rightHandSide": {
+                            "id": 785,
+                            "name": "_bridge",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 777,
+                            "src": "490:7:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_address",
+                              "typeString": "address"
+                            }
+                          },
+                          "src": "481:16:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_address",
+                            "typeString": "address"
+                          }
+                        },
+                        "id": 787,
+                        "nodeType": "ExpressionStatement",
+                        "src": "481:16:5"
+                      },
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "hexValue": "42726964676520616464726573732073657420746f202573",
+                              "id": 791,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "kind": "string",
+                              "lValueRequested": false,
+                              "nodeType": "Literal",
+                              "src": "519:26:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_stringliteral_ebb53fced56f2bc5a7c0c671fd4809f5f5cad3ed7821c0f1a5a00cd296206521",
+                                "typeString": "literal_string \"Bridge address set to %s\""
+                              },
+                              "value": "Bridge address set to %s"
+                            },
+                            {
+                              "id": 792,
+                              "name": "_bridge",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 777,
+                              "src": "547:7:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_stringliteral_ebb53fced56f2bc5a7c0c671fd4809f5f5cad3ed7821c0f1a5a00cd296206521",
+                                "typeString": "literal_string \"Bridge address set to %s\""
+                              },
+                              {
+                                "typeIdentifier": "t_address",
+                                "typeString": "address"
+                              }
+                            ],
+                            "expression": {
+                              "id": 788,
+                              "name": "console",
+                              "nodeType": "Identifier",
+                              "overloadedDeclarations": [],
+                              "referencedDeclaration": 8926,
+                              "src": "507:7:5",
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_type$_t_contract$_console_$8926_$",
+                                "typeString": "type(library console)"
+                              }
+                            },
+                            "id": 790,
+                            "isConstant": false,
+                            "isLValue": false,
+                            "isPure": false,
+                            "lValueRequested": false,
+                            "memberName": "log",
+                            "nodeType": "MemberAccess",
+                            "referencedDeclaration": 1621,
+                            "src": "507:11:5",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_view$_t_string_memory_ptr_$_t_address_$returns$__$",
+                              "typeString": "function (string memory,address) view"
+                            }
+                          },
+                          "id": 793,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "507:48:5",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 794,
+                        "nodeType": "ExpressionStatement",
+                        "src": "507:48:5"
+                      }
+                    ]
+                  },
+                  "id": 796,
+                  "implemented": true,
+                  "kind": "constructor",
+                  "modifiers": [
+                    {
+                      "arguments": [
+                        {
+                          "hexValue": "44436861696e737461636b446f6c6c617273",
+                          "id": 780,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "439:20:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_5178ccd700e73e73906673607c6ce4bddf48307df80c8a3efda1bc81283fe75d",
+                            "typeString": "literal_string \"DChainstackDollars\""
+                          },
+                          "value": "DChainstackDollars"
+                        },
+                        {
+                          "hexValue": "442d43485344",
+                          "id": 781,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": true,
+                          "kind": "string",
+                          "lValueRequested": false,
+                          "nodeType": "Literal",
+                          "src": "461:8:5",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_stringliteral_69b6c472f81b4e2ebe0a21ff8968612eb68be1ea893d18ac6893c305e01b90b0",
+                            "typeString": "literal_string \"D-CHSD\""
+                          },
+                          "value": "D-CHSD"
+                        }
+                      ],
+                      "id": 782,
+                      "kind": "baseConstructorSpecifier",
+                      "modifierName": {
+                        "id": 779,
+                        "name": "ERC20",
+                        "nodeType": "IdentifierPath",
+                        "referencedDeclaration": 587,
+                        "src": "433:5:5"
+                      },
+                      "nodeType": "ModifierInvocation",
+                      "src": "433:37:5"
+                    }
+                  ],
+                  "name": "",
+                  "nameLocation": "-1:-1:-1",
