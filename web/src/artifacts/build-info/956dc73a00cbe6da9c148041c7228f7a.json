@@ -37927,3 +37927,376 @@
                         "nodeType": "VariableDeclaration",
                         "scope": 1401,
                         "src": "4619:10:6",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes30",
+                          "typeString": "bytes30"
+                        },
+                        "typeName": {
+                          "id": 1388,
+                          "name": "bytes30",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "4619:7:6",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes30",
+                            "typeString": "bytes30"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "4618:12:6"
+                  },
+                  "returnParameters": {
+                    "id": 1391,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "4645:0:6"
+                  },
+                  "scope": 8926,
+                  "src": "4599:114:6",
+                  "stateMutability": "view",
+                  "virtual": false,
+                  "visibility": "internal"
+                },
+                {
+                  "body": {
+                    "id": 1414,
+                    "nodeType": "Block",
+                    "src": "4762:68:6",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "hexValue": "6c6f67286279746573333129",
+                                  "id": 1409,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "kind": "string",
+                                  "lValueRequested": false,
+                                  "nodeType": "Literal",
+                                  "src": "4806:14:6",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_stringliteral_c2854d92a0707e582e2710f9c9d3f148fdcf7e7da3b4270c2cfa3e223a2c50ce",
+                                    "typeString": "literal_string \"log(bytes31)\""
+                                  },
+                                  "value": "log(bytes31)"
+                                },
+                                {
+                                  "id": 1410,
+                                  "name": "p0",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1403,
+                                  "src": "4822:2:6",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_bytes31",
+                                    "typeString": "bytes31"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_stringliteral_c2854d92a0707e582e2710f9c9d3f148fdcf7e7da3b4270c2cfa3e223a2c50ce",
+                                    "typeString": "literal_string \"log(bytes31)\""
+                                  },
+                                  {
+                                    "typeIdentifier": "t_bytes31",
+                                    "typeString": "bytes31"
+                                  }
+                                ],
+                                "expression": {
+                                  "id": 1407,
+                                  "name": "abi",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": -1,
+                                  "src": "4782:3:6",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_magic_abi",
+                                    "typeString": "abi"
+                                  }
+                                },
+                                "id": 1408,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "memberName": "encodeWithSignature",
+                                "nodeType": "MemberAccess",
+                                "src": "4782:23:6",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_abiencodewithsignature_pure$_t_string_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                                  "typeString": "function (string memory) pure returns (bytes memory)"
+                                }
+                              },
+                              "id": 1411,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "4782:43:6",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            ],
+                            "id": 1406,
+                            "name": "_sendLogPayload",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 886,
+                            "src": "4766:15:6",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_view$_t_bytes_memory_ptr_$returns$__$",
+                              "typeString": "function (bytes memory) view"
+                            }
+                          },
+                          "id": 1412,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "4766:60:6",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 1413,
+                        "nodeType": "ExpressionStatement",
+                        "src": "4766:60:6"
+                      }
+                    ]
+                  },
+                  "id": 1415,
+                  "implemented": true,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "logBytes31",
+                  "nameLocation": "4725:10:6",
+                  "nodeType": "FunctionDefinition",
+                  "parameters": {
+                    "id": 1404,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 1403,
+                        "mutability": "mutable",
+                        "name": "p0",
+                        "nameLocation": "4744:2:6",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 1415,
+                        "src": "4736:10:6",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes31",
+                          "typeString": "bytes31"
+                        },
+                        "typeName": {
+                          "id": 1402,
+                          "name": "bytes31",
+                          "nodeType": "ElementaryTypeName",
+                          "src": "4736:7:6",
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_bytes31",
+                            "typeString": "bytes31"
+                          }
+                        },
+                        "visibility": "internal"
+                      }
+                    ],
+                    "src": "4735:12:6"
+                  },
+                  "returnParameters": {
+                    "id": 1405,
+                    "nodeType": "ParameterList",
+                    "parameters": [],
+                    "src": "4762:0:6"
+                  },
+                  "scope": 8926,
+                  "src": "4716:114:6",
+                  "stateMutability": "view",
+                  "virtual": false,
+                  "visibility": "internal"
+                },
+                {
+                  "body": {
+                    "id": 1428,
+                    "nodeType": "Block",
+                    "src": "4879:68:6",
+                    "statements": [
+                      {
+                        "expression": {
+                          "arguments": [
+                            {
+                              "arguments": [
+                                {
+                                  "hexValue": "6c6f67286279746573333229",
+                                  "id": 1423,
+                                  "isConstant": false,
+                                  "isLValue": false,
+                                  "isPure": true,
+                                  "kind": "string",
+                                  "lValueRequested": false,
+                                  "nodeType": "Literal",
+                                  "src": "4923:14:6",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_stringliteral_27b7cf8513ac6b65cae720183e1e60e67f8a9d92c01286c19d51d4e30aa269da",
+                                    "typeString": "literal_string \"log(bytes32)\""
+                                  },
+                                  "value": "log(bytes32)"
+                                },
+                                {
+                                  "id": 1424,
+                                  "name": "p0",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": 1417,
+                                  "src": "4939:2:6",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_bytes32",
+                                    "typeString": "bytes32"
+                                  }
+                                }
+                              ],
+                              "expression": {
+                                "argumentTypes": [
+                                  {
+                                    "typeIdentifier": "t_stringliteral_27b7cf8513ac6b65cae720183e1e60e67f8a9d92c01286c19d51d4e30aa269da",
+                                    "typeString": "literal_string \"log(bytes32)\""
+                                  },
+                                  {
+                                    "typeIdentifier": "t_bytes32",
+                                    "typeString": "bytes32"
+                                  }
+                                ],
+                                "expression": {
+                                  "id": 1421,
+                                  "name": "abi",
+                                  "nodeType": "Identifier",
+                                  "overloadedDeclarations": [],
+                                  "referencedDeclaration": -1,
+                                  "src": "4899:3:6",
+                                  "typeDescriptions": {
+                                    "typeIdentifier": "t_magic_abi",
+                                    "typeString": "abi"
+                                  }
+                                },
+                                "id": 1422,
+                                "isConstant": false,
+                                "isLValue": false,
+                                "isPure": true,
+                                "lValueRequested": false,
+                                "memberName": "encodeWithSignature",
+                                "nodeType": "MemberAccess",
+                                "src": "4899:23:6",
+                                "typeDescriptions": {
+                                  "typeIdentifier": "t_function_abiencodewithsignature_pure$_t_string_memory_ptr_$returns$_t_bytes_memory_ptr_$",
+                                  "typeString": "function (string memory) pure returns (bytes memory)"
+                                }
+                              },
+                              "id": 1425,
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": false,
+                              "kind": "functionCall",
+                              "lValueRequested": false,
+                              "names": [],
+                              "nodeType": "FunctionCall",
+                              "src": "4899:43:6",
+                              "tryCall": false,
+                              "typeDescriptions": {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            }
+                          ],
+                          "expression": {
+                            "argumentTypes": [
+                              {
+                                "typeIdentifier": "t_bytes_memory_ptr",
+                                "typeString": "bytes memory"
+                              }
+                            ],
+                            "id": 1420,
+                            "name": "_sendLogPayload",
+                            "nodeType": "Identifier",
+                            "overloadedDeclarations": [],
+                            "referencedDeclaration": 886,
+                            "src": "4883:15:6",
+                            "typeDescriptions": {
+                              "typeIdentifier": "t_function_internal_view$_t_bytes_memory_ptr_$returns$__$",
+                              "typeString": "function (bytes memory) view"
+                            }
+                          },
+                          "id": 1426,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "kind": "functionCall",
+                          "lValueRequested": false,
+                          "names": [],
+                          "nodeType": "FunctionCall",
+                          "src": "4883:60:6",
+                          "tryCall": false,
+                          "typeDescriptions": {
+                            "typeIdentifier": "t_tuple$__$",
+                            "typeString": "tuple()"
+                          }
+                        },
+                        "id": 1427,
+                        "nodeType": "ExpressionStatement",
+                        "src": "4883:60:6"
+                      }
+                    ]
+                  },
+                  "id": 1429,
+                  "implemented": true,
+                  "kind": "function",
+                  "modifiers": [],
+                  "name": "logBytes32",
+                  "nameLocation": "4842:10:6",
+                  "nodeType": "FunctionDefinition",
+                  "parameters": {
+                    "id": 1418,
+                    "nodeType": "ParameterList",
+                    "parameters": [
+                      {
+                        "constant": false,
+                        "id": 1417,
+                        "mutability": "mutable",
+                        "name": "p0",
+                        "nameLocation": "4861:2:6",
+                        "nodeType": "VariableDeclaration",
+                        "scope": 1429,
+                        "src": "4853:10:6",
+                        "stateVariable": false,
+                        "storageLocation": "default",
+                        "typeDescriptions": {
+                          "typeIdentifier": "t_bytes32",
+                          "typeString": "bytes32"
