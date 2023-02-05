@@ -23,4 +23,7 @@
           : 'bg-teal-100 text-teal-800'
       "
       aria-current="page"
-      >Send to
+      >Send token back to Original Chain</router-link
+    >
+  </div>
+</template>
