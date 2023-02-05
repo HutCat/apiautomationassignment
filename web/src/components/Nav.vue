@@ -11,4 +11,16 @@
           : 'bg-blue-100 text-blue-800 '
       "
       aria-current="page"
-      >B
+      >Bridge to Destination Chain</router-link
+    >
+
+    <router-link
+      :to="{ name: 'Destination' }"
+      class="border border-teal-600 block px-3 py-2 rounded-md text-base font-medium"
+      :class="
+        $route.name == 'Destination'
+          ? 'bg-teal-600 text-white'
+          : 'bg-teal-100 text-teal-800'
+      "
+      aria-current="page"
+      >Send to
