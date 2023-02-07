@@ -14,4 +14,11 @@ export const useGlobalStore = defineStore('global', {
     //@ts-ignore
     // saveWalletData(payload: WalletData) {
     //   this.address = payload.address
-    //   this.acc_short =
+    //   this.acc_short = `${payload.address.slice(
+    //     0,
+    //     2
+    //   )}...${payload.address.slice(-4)}`
+    // },
+    //TODO: save contract provider and contract itself to use it in all views
+  },
+})
