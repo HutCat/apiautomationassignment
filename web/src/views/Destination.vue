@@ -17,4 +17,11 @@
       :isNewNetwork="true"
     />
 
-    <f
+    <form class="w-96 mt-8 mx-auto">
+      <label for="price" class="block mb-2 font-medium text-gray-700"
+        >How much D-CHSD do you want to bridge?</label
+      >
+      <div class="mt-4 w-2/3 mx-auto relative rounded-md shadow-sm">
+        <div
+          class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none"
+        
