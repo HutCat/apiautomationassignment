@@ -76,4 +76,14 @@ import { defineComponent, ref } from 'vue'
 import { ethers, BigNumber } from 'ethers'
 
 import { useWalletStore } from '../stores/wallet'
-impo
+import WalletConnect from '@/components/WalletConnect.vue'
+
+import DChainstackDollars from '@/artifacts/contracts/DestinationToken.sol/DChainstackDollars.json'
+import ChainstackDollars from '@/artifacts/contracts/OriginToken.sol/ChainstackDollars.json'
+
+export default defineComponent({
+  components: { WalletConnect },
+  setup() {
+    const trxInProgress = ref<boolean>(false)
+
+    const wa
