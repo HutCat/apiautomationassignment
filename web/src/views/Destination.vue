@@ -86,4 +86,13 @@ export default defineComponent({
   setup() {
     const trxInProgress = ref<boolean>(false)
 
-    const wa
+    const walletStore = useWalletStore()
+    const amount = ref<String>('')
+    const walletBalance = ref<Number>(0)
+    const originTokenAddress = import.meta.env.VITE_ORIGIN_TOKEN_ADDRESS
+
+    const destinationTokenAddress = import.meta.env
+      .VITE_DESTINATION_TOKEN_ADDRESS
+
+    const originNetwork = import.meta.env.VITE_ORIGIN_NETWORK_NAME
+    const destinationNetwork = 
