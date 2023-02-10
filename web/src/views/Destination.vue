@@ -95,4 +95,13 @@ export default defineComponent({
       .VITE_DESTINATION_TOKEN_ADDRESS
 
     const originNetwork = import.meta.env.VITE_ORIGIN_NETWORK_NAME
-    const destinationNetwork = 
+    const destinationNetwork = import.meta.env.VITE_DESTINATION_NETWORK_NAME
+    const destinationNetworkId = import.meta.env.VITE_DESTINATION_NETWORK_ID
+
+    const bridgeWallet = import.meta.env.VITE_BRIDGE_WALLET
+
+    const provider = new ethers.providers.Web3Provider(window.ethereum)
+    // get the account that will pay for the trasaction
+    const signer = provider.getSigner()
+
+    let contract = new eth
