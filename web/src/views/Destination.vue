@@ -104,4 +104,20 @@ export default defineComponent({
     // get the account that will pay for the trasaction
     const signer = provider.getSigner()
 
-    let contract = new eth
+    let contract = new ethers.Contract(
+      destinationTokenAddress,
+      DChainstackDollars.abi,
+      signer
+    )
+
+    let ethContract = new ethers.Contract(
+      originTokenAddress,
+      ChainstackDollars.abi,
+      signer
+    )
+
+    const checkBalance = async function () {
+      // if (walletStore.address) {
+      try {
+        console.log('checking balane')
+        console.l
