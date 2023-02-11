@@ -120,4 +120,13 @@ export default defineComponent({
       // if (walletStore.address) {
       try {
         console.log('checking balane')
-        console.l
+        console.log('walletStore.address :>> ', walletStore.address)
+        let balance = await contract.balanceOf(walletStore.address)
+        balance = ethers.utils.formatUnits(balance, 18)
+        console.log('balance :>> ', balance)
+        walletBalance.value = balance
+      } catch (error) {
+        console.error('Error checking balance', error)
+      }
+      // }
+    
