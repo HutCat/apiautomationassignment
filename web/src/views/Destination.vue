@@ -138,4 +138,11 @@ export default defineComponent({
 
       //@ts-expect-error Window.ethers not TS
       if (typeof window.ethereum !== 'undefined') {
-        trx
+        trxInProgress.value = true
+        //@ts-expect-error Window.ethers not TS
+        // const provider = new ethers.providers.Web3Provider(window.ethereum)
+        // get the account that will pay for the trasaction
+        // const signer = provider.getSigner()
+        // as the operation we're going to do is a transaction,
+        // we pass the signer instead of the provider
+  
