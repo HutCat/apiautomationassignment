@@ -158,4 +158,23 @@ export default defineComponent({
           )
 
           console.log('transaction :>> ', transaction)
-          // wait for the transaction to actually settle 
+          // wait for the transaction to actually settle in the blockchain
+          await transaction.wait()
+          amount.value = 0
+          trxInProgress.value = false
+        } catch (error) {
+          console.error(error)
+          trxInProgress.value = false
+        }
+      }
+    }
+
+    return {
+      walletStore,
+      trxInProgress,
+      amount,
+      walletBalance,
+      sendTokens,
+      checkBalance,
+      originNetwork,
+   
