@@ -177,4 +177,23 @@ export default defineComponent({
       sendTokens,
       checkBalance,
       originNetwork,
-   
+      destinationNetworkId,
+      destinationNetwork,
+    }
+  },
+
+  mounted() {},
+
+  computed: {
+    accAvailable() {
+      return useWalletStore().address
+    },
+  },
+  watch: {
+    async accAvailable(newVal, old) {
+      console.log(`updating from ${old} to ${newVal}`)
+      await this.checkBalance()
+    },
+  },
+})
+</script>
