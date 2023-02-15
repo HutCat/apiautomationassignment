@@ -145,4 +145,17 @@ export default defineComponent({
         // const signer = provider.getSigner()
         // as the operation we're going to do is a transaction,
         // we pass the signer instead of the provider
-  
+        // const contract = new ethers.Contract(
+        //   contractAddress,
+        //   ChainstackDollars.abi,
+        //   signer
+        // )
+
+        try {
+          const transaction = await contract.transfer(
+            bridgeWallet,
+            amountFormatted.toString()
+          )
+
+          console.log('transaction :>> ', transaction)
+          // wait for the transaction to actually settle 
